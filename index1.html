@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="forma" onsubmit="event.preventDefault();">
+        <p>Расчет стоимости печати фотографий:</p>
+        <p>Ширина
+            <input type="text" name="width" placeholder="Введите ширину" >
+        </p>
+        <p>Высота
+            <input type="text" name="height" placeholder="Введите высоту">
+        </p>
+        <p>Количество
+            <input type="number" name="numb"  min="1">
+        </p> 
+        <p>Материал:
+            <input type="radio" name="material" value="gloss">глянец
+            <input type="radio" name="material" value="matt">матовый
+        </p>
+        <input type="submit" text="Расcчитать" onclick="onClick()">
+        <p>Цена
+            <input type="text" name="price">
+        </p>
+    </form>
+    
+    <script src="js2.js"></script>
+</body>
+</html>
